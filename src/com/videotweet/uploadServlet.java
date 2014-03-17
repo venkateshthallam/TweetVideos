@@ -39,8 +39,7 @@ public class uploadServlet extends HttpServlet {
        
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 AmazonS3 s3client = new AmazonS3Client(new ClasspathPropertiesFileCredentialsProvider());
-		 String bucketName="my-first-s3-bucket-12351705-d141-4964-b91b-eb3310ee797e";
-		 String key="vthallam";
+		 String bucketName="vthallam";
 		 String cdn="https://d1qa6uzcp7bzx.cloudfront.net";
 		 try{
 		 List<FileItem> items = new ServletFileUpload(new DiskFileItemFactory()).parseRequest(request);

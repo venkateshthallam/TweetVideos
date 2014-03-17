@@ -15,9 +15,30 @@
     <servlet-name>uploadServlet</servlet-name>
     <servlet-class>com.videotweet.uploadServlet</servlet-class>
   </servlet>
+  <servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.videotweet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CreateNewUser</servlet-name>
+		<servlet-class>com.videotweet.CreateNewUser</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>com.videotweet.LogoutServlet</servlet-class>
+	</servlet>
   <servlet-mapping>
     <servlet-name>uploadServlet</servlet-name>
     <url-pattern>/uploadServlet</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/loginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CreateNewUser</servlet-name>
+		<url-pattern>/createNewUser</url-pattern>
+	</servlet-mapping>
+
   
 </web-app>

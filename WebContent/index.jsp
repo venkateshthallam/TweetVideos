@@ -46,9 +46,19 @@
     <link rel="stylesheet" href="styles/styles.css" type="text/css" media="screen">
 </head>
 <body>
+<table width="100%">
+<tr>
+<td align="center"><jsp:include page="header.jsp" /></td> 
+</tr>
+<tr>
+<td align="center"><jsp:include page="list.jsp" /></td> 
+</tr>
+</table>
+</body>	
+<!-- <body>
 	<form action="uploadServlet" method="post" enctype="multipart/form-data">
   	  <input type="file" name="pic">
   	  <input type="submit">
-  	</form>
+  	</form>  -->
 </body>
 </html>
